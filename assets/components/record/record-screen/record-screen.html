@@ -1,0 +1,23 @@
+<link rel='import' href='../speed-label/speed-label.html'>
+<link rel='import' href='../location-watcher/location-watcher.html'>
+<link rel='import' href='/assets/google-map/google-map.html'>
+<link rel='import' href='../stream-recorder/stream-recorder.html'>
+<link rel='import' href='../record-button/record-button.html'>
+<dom-module id="watd-record-screen">
+  <style>
+    google-map {
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+  <template>
+    <watd-location-watcher id='watcher' position="{{position}}"></watd-location-watcher>
+    <watd-stream-recorder current-speed='[[position.speed]]' recording='[[recording]]'></watd-stream-recorder>
+    
+    <google-map id='google-map' latitude='[[position.latitude]]' longitude='[[position.longitude]]'></google-map>
+    <watd-speed-label speed='[[position.speed]]'></watd-speed-label>
+    <watd-record-button id='record-button' recording="{{recording}}"></watd-record-button>
+  </template>
+</dom-module>
+
+<script src="RecordScreen.js"></script>

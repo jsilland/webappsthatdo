@@ -1,0 +1,22 @@
+{
+  "name": "webappsthatdo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jsilland/webappsthatdo",
+  "authors": [
+    "Julien Silland <julien@soliton.io>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "1.0.0",
+    "google-map": "git://github.com/GoogleWebComponents/google-map.git#ceb706756206d2cd14d956750dcfb247d4ad0011",
+    "webcomponentsjs": "~0.7.2"
+  }
+}
